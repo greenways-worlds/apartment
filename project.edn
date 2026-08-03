@@ -1,0 +1,18 @@
+{:hara/type :project
+ :hara/version "1.0.0"
+ :project/id greenways-worlds/apartment
+ :project/version "1.0.0"
+ :project/source-paths []
+ :project/test-paths []
+ :project/extension-paths []
+ :project/capabilities [:canvas/webgl2 :input/pointer]
+ :project/world
+ {:world/version "1.0.0"
+  :world/title "Apartment"
+  :world/background "#111716"
+  :world/camera {:world/position [0 1.3 4.5]
+                 :world/target [0 1 0]
+                 :world/fov 55}
+  :world/layers [{:world/id apartment
+                  :world/asset "world/apartment.sog"}]
+  :world/imports []}}
